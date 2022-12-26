@@ -4,280 +4,189 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e76374c5-2b80-44b8-899b-ae876d857023" name="Changes" comment="test massage">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668181797547.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668181797547.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668182404240.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668182404240.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668182452675.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668182452675.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668182645288.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668182645288.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668415593032.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668415593032.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668416155423.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668416155423.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668416204834.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668416204834.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668416934544.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668416934544.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668417014211.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668417014211.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668417075915.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668417075915.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668417126205.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668417126205.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668417274399.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668417274399.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668417318180.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668417318180.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668417529104.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668417529104.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668418062190.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668418062190.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669025778551.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669025778551.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669027464836.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669027464836.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669027771915.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669027771915.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669028152315.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669028152315.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669028504913.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669028504913.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669038257587.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669038257587.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669038760687.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669038760687.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669043771514.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669043771514.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669044047739.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669044047739.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669044230234.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669044230234.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669044357488.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669044357488.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669044508336.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669044508336.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669044655019.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669044655019.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669044808203.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669044808203.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669046785886.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669046785886.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669047276820.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669047276820.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669047478934.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669047478934.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669047569271.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669047569271.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669048229405.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669048229405.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669048511617.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669048511617.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669048867291.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669048867291.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669109326070.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669109326070.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669109777159.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669109777159.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669112273427.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669112273427.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669112790545.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669112790545.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669113054081.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669113054081.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669113156525.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669113156525.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669113276175.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669113276175.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669113394433.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669113394433.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669114012241.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669114012241.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669114199473.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669114199473.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669114452302.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669114452302.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669114592246.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669114592246.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669120587325.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669120587325.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669121128311.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669121128311.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669127115979.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669127115979.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669127459869.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669127459869.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669129064856.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669129064856.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669129410282.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669129410282.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669129569814.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669129569814.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669129747409.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669129747409.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669130140396.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669130140396.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669130213520.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669130213520.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669131508724.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669131508724.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669131597365.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669131597365.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669133149052.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669133149052.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669368575369.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669368575369.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669368724705.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669368724705.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669369135457.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669369135457.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669369407932.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669369407932.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669372816827.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669372816827.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669380415089.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669472797573.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669472797573.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669473001580.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669473001580.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669822073022.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669822073022.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669822829919.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669822829919.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669885924534.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669885924534.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669919559038.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669919559038.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669919692165.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669919692165.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669919790274.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669919790274.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669919845814.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669919845814.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1670429763021.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1670673077899.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1670673077899.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1670943847998.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1670943847998.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1670943919763.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1670943919763.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1670944364325.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1670944364325.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1670944426642.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1670944426642.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1670944652561.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1670944652561.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1670944704497.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1670944704497.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1670944777206.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1670944777206.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1671443923757.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1671443923757.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1671521274081.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1671521274081.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1671540704025.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1671540704025.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1671540905985.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1671540905985.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1671542898269.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1671542898269.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1671548442373.0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1671548442373.0.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Historia/pages/Categories.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Historia/pages/FirstStepCheckout.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Historia/pages/MainPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Historia/scenarios/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Historia/scenarios/FirstThree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Historia/scenarios/checkoutFirst.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/example/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/Historia/pages/Categories.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/Historia/pages/FirstStepCheckout.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/Historia/pages/MainPage.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/Historia/scenarios/BaseTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/Historia/scenarios/FirstThree.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/Historia/scenarios/checkoutFirst.class" afterDir="false" />
+    <list default="true" id="e76374c5-2b80-44b8-899b-ae876d857023" name="Changes" comment="Add steps to the second main menu section">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_beust_jcommander_1_82.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_codeborne_selenide_6_10_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_codeborne_selenide_core_6_10_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_10_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_10_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_10_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_docker_java_docker_java_3_2_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_docker_java_docker_java_api_3_2_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_docker_java_docker_java_core_3_2_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_docker_java_docker_java_transport_3_2_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_docker_java_docker_java_transport_httpclient5_3_2_13.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_auto_auto_common_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_auto_service_auto_service_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_auto_service_auto_service_annotations_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_11_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_failureaccess_1_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_31_1_jre.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_activation_jakarta_activation_1_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_typesafe_netty_netty_reactive_streams_2_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_15.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_11_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dev_failsafe_failsafe_3_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_bonigarcia_webdrivermanager_5_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_84_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_84_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http_4_1_84_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_socks_4_1_60_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_84_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_84_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_proxy_4_1_60_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_84_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_84_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_classes_epoll_4_1_84_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_classes_kqueue_4_1_84_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_epoll_4_1_84_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_epoll_linux_x86_64_4_1_60_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_kqueue_4_1_84_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_kqueue_osx_x86_64_4_1_60_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_unix_common_4_1_84_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentelemetry_opentelemetry_api_1_19_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentelemetry_opentelemetry_api_logs_1_19_0_alpha.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentelemetry_opentelemetry_context_1_19_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentelemetry_opentelemetry_exporter_common_1_19_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentelemetry_opentelemetry_exporter_logging_1_19_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentelemetry_opentelemetry_sdk_1_19_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentelemetry_opentelemetry_sdk_common_1_19_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentelemetry_opentelemetry_sdk_extension_autoconfigure_1_19_0_alpha.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentelemetry_opentelemetry_sdk_extension_autoconfigure_spi_1_19_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentelemetry_opentelemetry_sdk_logs_1_19_0_alpha.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentelemetry_opentelemetry_sdk_metrics_1_19_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentelemetry_opentelemetry_sdk_trace_1_19_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_opentelemetry_opentelemetry_semconv_1_19_0_alpha.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_ous_jtoml_2_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_qameta_allure_allure_java_commons_2_20_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_qameta_allure_allure_model_2_20_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_qameta_allure_allure_selenide_2_20_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_12_18.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_5_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_compress_1_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_exec_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_12_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_client5_httpclient5_5_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_core5_httpcore5_5_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_core5_httpcore5_h2_5_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_asynchttpclient_async_http_client_2_12_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_asynchttpclient_async_http_client_netty_utils_2_12_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcpkix_jdk15on_1_64.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_64.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_brotli_dec_0_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_3_12_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_23_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_api_4_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_chrome_driver_4_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_chromium_driver_4_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_devtools_v106_4_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_devtools_v107_4_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_devtools_v108_4_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_devtools_v85_4_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_edge_driver_4_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_firefox_driver_4_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_http_4_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_ie_driver_4_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_java_4_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_json_4_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_manager_4_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_remote_driver_4_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_safari_driver_4_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_support_4_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_30.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_2_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/historia-autotests/Historia.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/historia-autotests/build/reports/tests/1671789544979.0.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Historia/pages/FirstStepCheckout.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Historia/scenarios/BaseTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Historia/scenarios/FirstThree.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Historia/scenarios/checkoutFirst.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Historia/pages/Categories.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Historia/pages/FirstStepCheckout.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Historia/pages/MainPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Historia/scenarios/BaseTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Historia/scenarios/FirstThree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Historia/scenarios/checkoutFirst.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/historia-autotests" value="SearchNeg" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/historia-autotests" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/test/java/Historia/scenarios/BaseTest.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/test/java/Historia/scenarios/checkoutFirst.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/historia-autotests/src/test/java/Historia/pages/Categories.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/historia-autotests/src/test/java/Historia/pages/MainPage.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/historia-autotests/src/test/java/Historia/scenarios/BaseTest.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/historia-autotests/src/test/java/Historia/scenarios/checkoutFirst.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2HDkY7ysONf7JhkKZCaIBNXR79A" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectId" id="2JJh4H6nOv5iDlMP02TtFeojVj9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/PS/IdeaProjects/Historia",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RecentsManager">
-    <key name="ExtractSuperBase.RECENT_KEYS">
-      <recent name="" />
-    </key>
-  </component>
-  <component name="RunManager" selected="JUnit.FirstThree.CataloguePages">
-    <configuration name="FirstThree.CataloguePages" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+}</component>
+  <component name="RunManager" selected="JUnit.TestOne.TestCataloguePagesSection2">
+    <configuration name="TestOne.TestCataloguePagesSection2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Historia" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Historia.scenarios.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="PACKAGE_NAME" value="Historia.scenarios" />
-      <option name="MAIN_CLASS_NAME" value="Historia.scenarios.FirstThree" />
-      <option name="METHOD_NAME" value="CataloguePages" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="checkoutFirst" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Historia" />
-      <option name="PACKAGE_NAME" value="Historia.scenarios" />
-      <option name="MAIN_CLASS_NAME" value="Historia.scenarios.checkoutFirst" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="checkoutFirst.checkDataFinder1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Historia" />
-      <option name="PACKAGE_NAME" value="Historia.scenarios" />
-      <option name="MAIN_CLASS_NAME" value="Historia.scenarios.checkoutFirst" />
-      <option name="METHOD_NAME" value="checkDataFinder1" />
+      <option name="MAIN_CLASS_NAME" value="Historia.scenarios.TestOne" />
+      <option name="METHOD_NAME" value="TestCataloguePagesSection2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -285,6 +194,12 @@
     </configuration>
     <configuration name="checkoutFirst.checkHref1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Historia" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Historia.scenarios.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <option name="PACKAGE_NAME" value="Historia.scenarios" />
       <option name="MAIN_CLASS_NAME" value="Historia.scenarios.checkoutFirst" />
       <option name="METHOD_NAME" value="checkHref1" />
@@ -293,35 +208,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="checkoutFirst.checkHref2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Historia" />
-      <option name="PACKAGE_NAME" value="Historia.scenarios" />
-      <option name="MAIN_CLASS_NAME" value="Historia.scenarios.checkoutFirst" />
-      <option name="METHOD_NAME" value="checkHref2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FirstThree.CataloguePages" />
-        <item itemvalue="JUnit.checkoutFirst.checkDataFinder1" />
+        <item itemvalue="JUnit.TestOne.TestCataloguePagesSection2" />
         <item itemvalue="JUnit.checkoutFirst.checkHref1" />
-        <item itemvalue="JUnit.checkoutFirst.checkHref2" />
-        <item itemvalue="JUnit.checkoutFirst" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task id="LOCAL-00001" summary="Add Neg test">
+      <created>1671789877558</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1671789877558</updated>
+    </task>
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e76374c5-2b80-44b8-899b-ae876d857023" name="Changes" comment="" />
-      <created>1667827093249</created>
+      <changelist id="e76374c5-2b80-44b8-899b-ae876d857023" name="Changes" comment="Add Neg test" />
+      <created>1671801908455</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1667827093249</updated>
+      <updated>1671801908455</updated>
     </task>
+    <task id="LOCAL-00002" summary="Add steps to the second main menu section">
+      <created>1672064197401</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1672064197401</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add steps to the second main menu section">
+      <created>1672065494466</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1672065494466</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add steps to the second main menu section">
+      <created>1672065799663</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1672065799663</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -329,16 +260,28 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="SearchNeg" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="test massage" />
-    <option name="LAST_COMMIT_MESSAGE" value="test massage" />
+    <MESSAGE value="Add Neg test" />
+    <MESSAGE value="Add steps to the second main menu section" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add steps to the second main menu section" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Historia$checkoutFirst_checkHref.ic" NAME="checkoutFirst.checkHref Coverage Results" MODIFIED="1668419320318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

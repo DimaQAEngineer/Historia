@@ -9,5 +9,8 @@
         <module name="Historia" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Historia" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>

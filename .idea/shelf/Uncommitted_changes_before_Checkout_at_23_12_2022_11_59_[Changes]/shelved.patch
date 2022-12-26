@@ -1,0 +1,1050 @@
+Index: historia-autotests/src/test/java/Historia/scenarios/BaseTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Historia.scenarios;\r\n\r\nimport com.codeborne.selenide.Configuration;\r\nimport com.codeborne.selenide.Selenide;\r\nimport io.github.bonigarcia.wdm.WebDriverManager;\r\nimport org.gradle.internal.impldep.org.junit.After;\r\nimport org.junit.Before;\r\nimport org.junit.jupiter.api.AfterAll;\r\nimport org.junit.jupiter.api.BeforeAll;\r\nimport org.junit.jupiter.api.BeforeEach;\r\n\r\n\r\nimport static com.codeborne.selenide.Selenide.*;\r\nimport static com.codeborne.selenide.WebDriverRunner.hasWebDriverStarted;\r\n\r\npublic class BaseTest {\r\n    @BeforeAll\r\n    public static void setUp(){\r\n        WebDriverManager.chromedriver().setup();\r\n        Configuration.browser = \"chrome\";\r\n        Configuration.driverManagerEnabled = true;\r\n        Configuration.browserSize = \"1720x900\";\r\n        Configuration.headless = false;\r\n    }\r\n    public void gotoMainPage(){\r\n                open(\"https://www.historia.net/de-de/\");\r\n            }\r\n    public void sec(){\r\n        sleep(2000);\r\n    }\r\n\r\n    public void secB(){sleep(4000);\r\n    }\r\n    public void secV(){sleep(9000);\r\n    }\r\n    public void EnterAllReqFields() {\r\n        sec();\r\n        $x(\"//*[@id='co-shipping-form']//*[@name='prefix']\").setValue(\"autotest\");\r\n        $x(\"//*[@id='co-shipping-form']//*[@name='firstname']\").setValue(\"autotest\");\r\n        $x(\"//*[@id='co-shipping-form']//*[@name='lastname']\").setValue(\"autotest\");\r\n        $x(\"//*[@id='co-shipping-form']//*[@name='street[0]']\").setValue(\"autotest\");\r\n        $x(\"//*[@id='co-shipping-form']//*[@name='postcode']\").setValue(\"23456\");\r\n        $x(\"//*[@id='co-shipping-form']//*[@name='city']\").setValue(\"autotest\");}\r\n\r\n    @BeforeEach\r\n    public void initEach() {\r\n        if (hasWebDriverStarted()) {\r\n            clearBrowserCookies();\r\n            clearBrowserLocalStorage();\r\n            refresh();\r\n        }\r\n    }\r\n    @AfterAll\r\n    public static void tearDown(){\r\n                Selenide.closeWebDriver();\r\n            }\r\n   }\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/historia-autotests/src/test/java/Historia/scenarios/BaseTest.java b/historia-autotests/src/test/java/Historia/scenarios/BaseTest.java
+--- a/historia-autotests/src/test/java/Historia/scenarios/BaseTest.java	(revision 3eed74ea81d0d352d96e2657130a28d96d2b53cc)
++++ b/historia-autotests/src/test/java/Historia/scenarios/BaseTest.java	(date 1671789504095)
+@@ -3,13 +3,10 @@
+ import com.codeborne.selenide.Configuration;
+ import com.codeborne.selenide.Selenide;
+ import io.github.bonigarcia.wdm.WebDriverManager;
+-import org.gradle.internal.impldep.org.junit.After;
+-import org.junit.Before;
+ import org.junit.jupiter.api.AfterAll;
+ import org.junit.jupiter.api.BeforeAll;
+ import org.junit.jupiter.api.BeforeEach;
+ 
+-
+ import static com.codeborne.selenide.Selenide.*;
+ import static com.codeborne.selenide.WebDriverRunner.hasWebDriverStarted;
+ 
+Index: src/main/java/org/example/Main.java
+===================================================================
+diff --git a/src/main/java/org/example/Main.java b/src/main/java/org/example/Main.java
+deleted file mode 100644
+--- a/src/main/java/org/example/Main.java	(revision 503351f1c9e6d67702199a48aa5d8a5dd80d63e2)
++++ /dev/null	(revision 503351f1c9e6d67702199a48aa5d8a5dd80d63e2)
+@@ -1,7 +0,0 @@
+-package org.example;
+-
+-public class Main {
+-    public static void main(String[] args) {
+-        System.out.println("Hello world!");
+-    }
+-}
+\ No newline at end of file
+Index: src/test/java/Historia/scenarios/FirstThree.java
+===================================================================
+diff --git a/src/test/java/Historia/scenarios/FirstThree.java b/src/test/java/Historia/scenarios/FirstThree.java
+deleted file mode 100644
+--- a/src/test/java/Historia/scenarios/FirstThree.java	(revision 503351f1c9e6d67702199a48aa5d8a5dd80d63e2)
++++ /dev/null	(revision 503351f1c9e6d67702199a48aa5d8a5dd80d63e2)
+@@ -1,29 +0,0 @@
+-package Historia.scenarios;
+-
+-import Historia.pages.Categories;
+-import Historia.pages.MainPage;
+-import org.junit.Test;
+-
+-import javax.swing.text.html.parser.DTD;
+-
+-public class FirstThree extends BaseTest {
+-    private DTD document;
+-
+-    MainPage mainPage = new MainPage();
+-    Categories categories = new Categories();
+-    @Test
+-    public void CataloguePages(){
+-        gotoMainPage();
+-        mainPage.Acceptallcookies();
+-        mainPage.ZeitungfindenHochzeitszeitung();
+-        categories.Ish1likethis_Hochzeitszeitung();
+-        mainPage.ZeitungfindenZeitungvomTagderGeburt();
+-        categories.Ish1likethis_GeburtstagszeitungalsGeschenk();
+-        mainPage.ZeitungfindenZeitungsarchiv();
+-        categories.Ish1likethis_GeschenkeausdemZeitungsarchiv();
+-        mainPage.ZeitungfindenJubilaumszeitung();
+-        categories.Ish1likethis_Jubilaumszeitung();
+-        mainPage.ZeitungfindenGeschenkzeitung();
+-        categories.Ish1likethis_Geschenkzeitung();
+-    }
+-}
+\ No newline at end of file
+Index: pom.xml
+===================================================================
+diff --git a/pom.xml b/pom.xml
+deleted file mode 100644
+--- a/pom.xml	(revision 503351f1c9e6d67702199a48aa5d8a5dd80d63e2)
++++ /dev/null	(revision 503351f1c9e6d67702199a48aa5d8a5dd80d63e2)
+@@ -1,68 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project xmlns="http://maven.apache.org/POM/4.0.0"
+-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+-    <modelVersion>4.0.0</modelVersion>
+-
+-    <groupId>org.example</groupId>
+-    <artifactId>Historia</artifactId>
+-    <version>1.0-SNAPSHOT</version>
+-
+-    <properties>
+-        <maven.compiler.source>17</maven.compiler.source>
+-        <maven.compiler.target>17</maven.compiler.target>
+-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+-    </properties>
+-    <dependencies>
+-        <dependency>
+-            <groupId>io.qameta.allure</groupId>
+-            <artifactId>allure-selenide</artifactId>
+-            <version>2.20.1</version>
+-        </dependency>
+-        <dependency>
+-            <groupId>org.seleniumhq.selenium</groupId>
+-            <artifactId>selenium-java</artifactId>
+-            <version>4.6.0</version>
+-        </dependency>
+-
+-            <dependency>
+-                <groupId>org.seleniumhq.selenium</groupId>
+-                <artifactId>selenium-chrome-driver</artifactId>
+-                <version>4.6.0</version>
+-                   </dependency>
+-        <dependency>
+-            <groupId>com.codeborne</groupId>
+-            <artifactId>selenide</artifactId>
+-            <version>6.9.0</version>
+-        </dependency>
+-        <dependency>
+-            <groupId>io.github.bonigarcia</groupId>
+-            <artifactId>webdrivermanager</artifactId>
+-            <version>5.3.0</version>
+-        </dependency>
+-        <dependency>
+-        <groupId>org.seleniumhq.selenium</groupId>
+-        <artifactId>selenium-api</artifactId>
+-        <version>4.6.0</version>
+-        </dependency>
+-        <dependency>
+-            <groupId>junit</groupId>
+-            <artifactId>junit</artifactId>
+-            <version>4.13.2</version>
+-            <scope>test</scope>
+-        </dependency>
+-        <dependency>
+-            <groupId>org.jetbrains</groupId>
+-            <artifactId>annotations</artifactId>
+-            <version>RELEASE</version>
+-            <scope>compile</scope>
+-        </dependency>
+-        <dependency>
+-            <groupId>org.junit.jupiter</groupId>
+-            <artifactId>junit-jupiter</artifactId>
+-            <version>5.9.0</version>
+-            <scope>test</scope>
+-        </dependency>
+-    </dependencies>
+-
+-</project>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+deleted file mode 100644
+--- a/.idea/misc.xml	(revision 503351f1c9e6d67702199a48aa5d8a5dd80d63e2)
++++ /dev/null	(revision 503351f1c9e6d67702199a48aa5d8a5dd80d63e2)
+@@ -1,14 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="ExternalStorageConfigurationManager" enabled="true" />
+-  <component name="MavenProjectsManager">
+-    <option name="originalFiles">
+-      <list>
+-        <option value="$PROJECT_DIR$/pom.xml" />
+-      </list>
+-    </option>
+-  </component>
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
+-    <output url="file://$PROJECT_DIR$/out" />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: .idea/uiDesigner.xml
+===================================================================
+diff --git a/.idea/uiDesigner.xml b/.idea/uiDesigner.xml
+deleted file mode 100644
+--- a/.idea/uiDesigner.xml	(revision 503351f1c9e6d67702199a48aa5d8a5dd80d63e2)
++++ /dev/null	(revision 503351f1c9e6d67702199a48aa5d8a5dd80d63e2)
+@@ -1,124 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="Palette2">
+-    <group name="Swing">
+-      <item class="com.intellij.uiDesigner.HSpacer" tooltip-text="Horizontal Spacer" icon="/com/intellij/uiDesigner/icons/hspacer.svg" removable="false" auto-create-binding="false" can-attach-label="false">
+-        <default-constraints vsize-policy="1" hsize-policy="6" anchor="0" fill="1" />
+-      </item>
+-      <item class="com.intellij.uiDesigner.VSpacer" tooltip-text="Vertical Spacer" icon="/com/intellij/uiDesigner/icons/vspacer.svg" removable="false" auto-create-binding="false" can-attach-label="false">
+-        <default-constraints vsize-policy="6" hsize-policy="1" anchor="0" fill="2" />
+-      </item>
+-      <item class="javax.swing.JPanel" icon="/com/intellij/uiDesigner/icons/panel.svg" removable="false" auto-create-binding="false" can-attach-label="false">
+-        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3" />
+-      </item>
+-      <item class="javax.swing.JScrollPane" icon="/com/intellij/uiDesigner/icons/scrollPane.svg" removable="false" auto-create-binding="false" can-attach-label="true">
+-        <default-constraints vsize-policy="7" hsize-policy="7" anchor="0" fill="3" />
+-      </item>
+-      <item class="javax.swing.JButton" icon="/com/intellij/uiDesigner/icons/button.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+-        <default-constraints vsize-policy="0" hsize-policy="3" anchor="0" fill="1" />
+-        <initial-values>
+-          <property name="text" value="Button" />
+-        </initial-values>
+-      </item>
+-      <item class="javax.swing.JRadioButton" icon="/com/intellij/uiDesigner/icons/radioButton.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+-        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
+-        <initial-values>
+-          <property name="text" value="RadioButton" />
+-        </initial-values>
+-      </item>
+-      <item class="javax.swing.JCheckBox" icon="/com/intellij/uiDesigner/icons/checkBox.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+-        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
+-        <initial-values>
+-          <property name="text" value="CheckBox" />
+-        </initial-values>
+-      </item>
+-      <item class="javax.swing.JLabel" icon="/com/intellij/uiDesigner/icons/label.svg" removable="false" auto-create-binding="false" can-attach-label="false">
+-        <default-constraints vsize-policy="0" hsize-policy="0" anchor="8" fill="0" />
+-        <initial-values>
+-          <property name="text" value="Label" />
+-        </initial-values>
+-      </item>
+-      <item class="javax.swing.JTextField" icon="/com/intellij/uiDesigner/icons/textField.svg" removable="false" auto-create-binding="true" can-attach-label="true">
+-        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
+-          <preferred-size width="150" height="-1" />
+-        </default-constraints>
+-      </item>
+-      <item class="javax.swing.JPasswordField" icon="/com/intellij/uiDesigner/icons/passwordField.svg" removable="false" auto-create-binding="true" can-attach-label="true">
+-        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
+-          <preferred-size width="150" height="-1" />
+-        </default-constraints>
+-      </item>
+-      <item class="javax.swing.JFormattedTextField" icon="/com/intellij/uiDesigner/icons/formattedTextField.svg" removable="false" auto-create-binding="true" can-attach-label="true">
+-        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
+-          <preferred-size width="150" height="-1" />
+-        </default-constraints>
+-      </item>
+-      <item class="javax.swing.JTextArea" icon="/com/intellij/uiDesigner/icons/textArea.svg" removable="false" auto-create-binding="true" can-attach-label="true">
+-        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+-          <preferred-size width="150" height="50" />
+-        </default-constraints>
+-      </item>
+-      <item class="javax.swing.JTextPane" icon="/com/intellij/uiDesigner/icons/textPane.svg" removable="false" auto-create-binding="true" can-attach-label="true">
+-        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+-          <preferred-size width="150" height="50" />
+-        </default-constraints>
+-      </item>
+-      <item class="javax.swing.JEditorPane" icon="/com/intellij/uiDesigner/icons/editorPane.svg" removable="false" auto-create-binding="true" can-attach-label="true">
+-        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+-          <preferred-size width="150" height="50" />
+-        </default-constraints>
+-      </item>
+-      <item class="javax.swing.JComboBox" icon="/com/intellij/uiDesigner/icons/comboBox.svg" removable="false" auto-create-binding="true" can-attach-label="true">
+-        <default-constraints vsize-policy="0" hsize-policy="2" anchor="8" fill="1" />
+-      </item>
+-      <item class="javax.swing.JTable" icon="/com/intellij/uiDesigner/icons/table.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+-        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+-          <preferred-size width="150" height="50" />
+-        </default-constraints>
+-      </item>
+-      <item class="javax.swing.JList" icon="/com/intellij/uiDesigner/icons/list.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+-        <default-constraints vsize-policy="6" hsize-policy="2" anchor="0" fill="3">
+-          <preferred-size width="150" height="50" />
+-        </default-constraints>
+-      </item>
+-      <item class="javax.swing.JTree" icon="/com/intellij/uiDesigner/icons/tree.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+-        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+-          <preferred-size width="150" height="50" />
+-        </default-constraints>
+-      </item>
+-      <item class="javax.swing.JTabbedPane" icon="/com/intellij/uiDesigner/icons/tabbedPane.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+-        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
+-          <preferred-size width="200" height="200" />
+-        </default-constraints>
+-      </item>
+-      <item class="javax.swing.JSplitPane" icon="/com/intellij/uiDesigner/icons/splitPane.svg" removable="false" auto-create-binding="false" can-attach-label="false">
+-        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
+-          <preferred-size width="200" height="200" />
+-        </default-constraints>
+-      </item>
+-      <item class="javax.swing.JSpinner" icon="/com/intellij/uiDesigner/icons/spinner.svg" removable="false" auto-create-binding="true" can-attach-label="true">
+-        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
+-      </item>
+-      <item class="javax.swing.JSlider" icon="/com/intellij/uiDesigner/icons/slider.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+-        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
+-      </item>
+-      <item class="javax.swing.JSeparator" icon="/com/intellij/uiDesigner/icons/separator.svg" removable="false" auto-create-binding="false" can-attach-label="false">
+-        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3" />
+-      </item>
+-      <item class="javax.swing.JProgressBar" icon="/com/intellij/uiDesigner/icons/progressbar.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+-        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1" />
+-      </item>
+-      <item class="javax.swing.JToolBar" icon="/com/intellij/uiDesigner/icons/toolbar.svg" removable="false" auto-create-binding="false" can-attach-label="false">
+-        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1">
+-          <preferred-size width="-1" height="20" />
+-        </default-constraints>
+-      </item>
+-      <item class="javax.swing.JToolBar$Separator" icon="/com/intellij/uiDesigner/icons/toolbarSeparator.svg" removable="false" auto-create-binding="false" can-attach-label="false">
+-        <default-constraints vsize-policy="0" hsize-policy="0" anchor="0" fill="1" />
+-      </item>
+-      <item class="javax.swing.JScrollBar" icon="/com/intellij/uiDesigner/icons/scrollbar.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+-        <default-constraints vsize-policy="6" hsize-policy="0" anchor="0" fill="2" />
+-      </item>
+-    </group>
+-  </component>
+-</project>
+\ No newline at end of file
+Index: src/test/java/Historia/pages/Categories.java
+===================================================================
+diff --git a/src/test/java/Historia/pages/Categories.java b/src/test/java/Historia/pages/Categories.java
+deleted file mode 100644
+--- a/src/test/java/Historia/pages/Categories.java	(revision 503351f1c9e6d67702199a48aa5d8a5dd80d63e2)
++++ /dev/null	(revision 503351f1c9e6d67702199a48aa5d8a5dd80d63e2)
+@@ -1,35 +0,0 @@
+-package Historia.pages;
+-
+-import Historia.scenarios.BaseTest;
+-import io.qameta.allure.Step;
+-
+-import static com.codeborne.selenide.Condition.text;
+-import static com.codeborne.selenide.Selenide.$x;
+-
+-public class Categories extends BaseTest {
+-    @Step("Is h1 like this Hochzeitszeitung")
+-    public void Ish1likethis_Hochzeitszeitung() {
+-        $x("//*[@id='maincontent']/div[2]/div/div[1]/div[2]/div[2]/h1").shouldHave(text("Hochzeitszeitung"));
+-        sec();
+-    }
+-    @Step("Is h1 like this Geburtstagszeitung als Geschenk")
+-        public void Ish1likethis_GeburtstagszeitungalsGeschenk() {
+-            $x("//*[@id='maincontent']/div[2]/div/div[1]/div[2]/div[2]/h1").shouldHave(text("Geburtstagszeitung als Geschenk"));
+-            sec();
+-    }
+-    @Step("Is h1 like this Geschenke aus dem Zeitungsarchiv")
+-    public void Ish1likethis_GeschenkeausdemZeitungsarchiv() {
+-        $x("//*[@id='maincontent']/div[2]/div/div[1]/div[2]/div[2]/h1").shouldHave(text("Geschenke aus dem Zeitungsarchiv"));
+-        sec();
+-    }
+-    @Step("Is h1 like this Jubilaumszeitung")
+-    public void Ish1likethis_Jubilaumszeitung() {
+-        $x("//*[@id='maincontent']/div[2]/div/div[1]/div[2]/div[2]/h1").shouldHave(text("Jubiläumszeitung"));
+-        sec();
+-    }
+-    @Step("Is h1 like this Geschenkzeitung")
+-    public void Ish1likethis_Geschenkzeitung() {
+-        $x("//*[@id='maincontent']/div[2]/div/div[1]/div[2]/div[2]/h1").shouldHave(text("Geschenkzeitung"));
+-        sec();
+-    }
+-}
+Index: src/test/java/Historia/pages/FirstStepCheckout.java
+===================================================================
+diff --git a/src/test/java/Historia/pages/FirstStepCheckout.java b/src/test/java/Historia/pages/FirstStepCheckout.java
+deleted file mode 100644
+--- a/src/test/java/Historia/pages/FirstStepCheckout.java	(revision 503351f1c9e6d67702199a48aa5d8a5dd80d63e2)
++++ /dev/null	(revision 503351f1c9e6d67702199a48aa5d8a5dd80d63e2)
+@@ -1,20 +0,0 @@
+-package Historia.pages;
+-
+-import Historia.scenarios.BaseTest;
+-import io.qameta.allure.Step;
+-
+-import static com.codeborne.selenide.Selenide.$x;
+-
+-public class FirstStepCheckout extends BaseTest {
+-
+-    @Step("Enter All Required Fields")
+-    public void EnterAllReqFields() {
+-        sec();
+-        $x("//*[@id='co-shipping-form']//*[@name='prefix']").setValue("autotest");
+-        $x("//*[@id='co-shipping-form']//*[@name='firstname']").setValue("autotest");
+-        $x("//*[@id='co-shipping-form']//*[@name='lastname']").setValue("autotest");
+-        $x("//*[@id='co-shipping-form']//*[@name='street[0]']").setValue("autotest");
+-        $x("//*[@id='co-shipping-form']//*[@name='postcode']").setValue("23456");
+-        $x("//*[@id='co-shipping-form']//*[@name='city']").setValue("autotest");}
+-    }
+-
+Index: .idea/jarRepositories.xml
+===================================================================
+diff --git a/.idea/jarRepositories.xml b/.idea/jarRepositories.xml
+deleted file mode 100644
+--- a/.idea/jarRepositories.xml	(revision 503351f1c9e6d67702199a48aa5d8a5dd80d63e2)
++++ /dev/null	(revision 503351f1c9e6d67702199a48aa5d8a5dd80d63e2)
+@@ -1,20 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="RemoteRepositoriesConfiguration">
+-    <remote-repository>
+-      <option name="id" value="central" />
+-      <option name="name" value="Central Repository" />
+-      <option name="url" value="https://repo.maven.apache.org/maven2" />
+-    </remote-repository>
+-    <remote-repository>
+-      <option name="id" value="central" />
+-      <option name="name" value="Maven Central repository" />
+-      <option name="url" value="https://repo1.maven.org/maven2" />
+-    </remote-repository>
+-    <remote-repository>
+-      <option name="id" value="jboss.community" />
+-      <option name="name" value="JBoss Community repository" />
+-      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+-    </remote-repository>
+-  </component>
+-</project>
+\ No newline at end of file
+Index: src/test/java/Historia/scenarios/checkoutFirst.java
+===================================================================
+diff --git a/src/test/java/Historia/scenarios/checkoutFirst.java b/src/test/java/Historia/scenarios/checkoutFirst.java
+deleted file mode 100644
+--- a/src/test/java/Historia/scenarios/checkoutFirst.java	(revision 503351f1c9e6d67702199a48aa5d8a5dd80d63e2)
++++ /dev/null	(revision 503351f1c9e6d67702199a48aa5d8a5dd80d63e2)
+@@ -1,79 +0,0 @@
+-package Historia.scenarios;
+-
+-import Historia.scenarios.BaseTest;
+-import org.junit.Test;
+-import org.openqa.selenium.By;
+-import org.openqa.selenium.Keys;
+-
+-import javax.swing.text.html.parser.DTD;
+-
+-import static com.codeborne.selenide.Selenide.*;
+-
+-public class checkoutFirst extends BaseTest {
+-    private DTD document;
+-
+-    @Test
+-    public void checkHref1(){
+-        gotoMainPage();
+-        $(By.id("uc-btn-accept-banner")).click();
+-        $x("//*[@id='mega-menu']/ul/li[3]/a").click();
+-        sec();$x("//*[@id='product-item-info_2103165']/div/strong/a").shouldBe().click();
+-        sec();$x("//*[@id='options-842901-list']/div[2]/label").click();
+-        sec();$x("//*[@id='product-addtocart-button']").click();
+-        sec();$x("//*[starts-with(@id, 'cart')]").sendKeys(Keys.BACK_SPACE);
+-        sec();$x("//*[starts-with(@id, 'cart')]").setValue("3");
+-        sec();$x("//*[starts-with(@id, 'update')]").click();
+-        sec();$x("//*[@id='minicart-content-wrapper']/div[3]/div[2]/a").click();
+-        sec();$x("//*[@id='shopping-cart-table']/section/div[2]/div[1]/div[2]/div/button[1]").click();
+-        sec();$x("//*[@id='shopping-cart-table']/section/div[2]/div[1]/div[2]/div/button[1]").click();
+-        sec();$x("//*[@id='shopping-cart-table']/div/button").click();
+-        sec();$x("//*[@id='maincontent']/div[2]/div/div[3]/div[1]/div[1]/button").click();
+-        secB();$x("//*[@id='customer-email']").setValue("dimaskopiwritter+test@gmail.com");
+-        EnterAllReqFields();
+-        sec();$x("//*[@id='checkout-shipping-method-load']/table/tbody/tr[1]/td[1]/div").shouldBe().click();
+-        sec();$x("//*[@id='shipping-method-buttons-container']/div/button").click();
+-        secB();$x("//*[@id='checkout-payment-method-load']/div/div/div[6]/div[1]/label/span").shouldBe().click();
+-    }
+-    @Test
+-    public void checkHref2() {
+-        open("https://www.historia.net/de-de/");
+-        $(By.id("uc-btn-accept-banner")).click();
+-        $x("//*[@id='mega-menu']/ul/li[3]/a").click();
+-        sec();$x("//*[@id='product-item-info_2103193']/a/div/picture/img").scrollTo();
+-        sec();$x("//*[@id='product-item-info_2103193']/div/strong/a").click();
+-        sec();$x("//*[@id='select2-bundle-option-19307-container']").click();
+-        sec();$x("//*[starts-with(@data-select2-id, 'select2-bundle')][1]").click();
+-        sec();$x("//*[@id='maincontent']").scrollTo();
+-        sec();$x("//*[@id='options-843253-list']/div[2]/label/span").click();
+-        sec();$x("//*[@id='product-addtocart-button']").click();
+-        sec();$x("//*[@id='minicart-content-wrapper']/div[3]/div[2]/a").click();
+-        sec();$x("//*[@id='shopping-cart-table']/section/div[2]/div[1]/div[2]/div/button[2]").click();
+-        sec();$x("//*[@id='shopping-cart-table']/div/button").click();
+-        sec();$x("//*[@id='maincontent']/div[2]/div/div[3]/div[1]/div[1]/button").click();
+-        secB();$x("//*[@id='customer-email']").setValue("dimaskopiwritter+test@gmail.com");
+-        sec();$x("//*[@id='co-shipping-form']//*[@name='prefix']").setValue("autotest");
+-        $x("//*[@id='co-shipping-form']//*[@name='firstname']").setValue("autotest");
+-        $x("//*[@id='co-shipping-form']//*[@name='lastname']").setValue("autotest");
+-        $x("//*[@id='co-shipping-form']//*[@name='street[0]']").setValue("autotest");
+-        $x("//*[@id='co-shipping-form']//*[@name='city']").setValue("autotest");
+-        $x("//*[@id='co-shipping-form']//*[@name='postcode']").setValue("23456");
+-        $x("//*[@id='co-shipping-form']//*[@name='city']").setValue("autotest");
+-        sec();$x("//*[@id='shipping']").scrollTo();
+-        sec();$x("//*[@id='checkout-shipping-method-load']/table/tbody/tr[3]/td[1]/div").click();
+-        sec();$x("//*[@id='shipping-method-buttons-container']/div/button").click();
+-        secV();$x("//*[@id='co-payment-form']/fieldset/div[2]/div[1]/div[1]/div[5]/label/input").click();
+-        secV(); $x("//*[@id='checkout-payment-method-load']/div/div/div[1]").scrollTo();
+-       secV(); //sec();$x("//*[@id="place-ppp-order"]/span").click();
+-    }
+-    @Test
+-    public void checkDataFinder1() {
+-        open("https://www.historia.net/de-de/");
+-        $(By.id("uc-btn-accept-banner")).click();
+-        sec();$x("//*[@id='html-body']/div[1]/header/div/div/div[4]").scrollTo();
+-        sec();$x("//*[@id='maincontent']/div[1]/form/div/div[1]/select").selectOption("23");
+-        sec();$x("//*[@id='maincontent']/div[1]/form/div/div[2]/select").selectOption("10");
+-        sec();$x("//*[@id='maincontent']/div[1]/form/div/div[3]/select").selectOption("2011");
+-        sec();$x("//*[@id='maincontent']/div[1]/form/div/button").click();
+-    }
+-
+-}
+Index: src/test/java/Historia/pages/MainPage.java
+===================================================================
+diff --git a/src/test/java/Historia/pages/MainPage.java b/src/test/java/Historia/pages/MainPage.java
+deleted file mode 100644
+--- a/src/test/java/Historia/pages/MainPage.java	(revision 503351f1c9e6d67702199a48aa5d8a5dd80d63e2)
++++ /dev/null	(revision 503351f1c9e6d67702199a48aa5d8a5dd80d63e2)
+@@ -1,64 +0,0 @@
+-package Historia.pages;
+-
+-import Historia.scenarios.BaseTest;
+-import com.codeborne.selenide.Selenide;
+-import com.codeborne.selenide.SelenideElement;
+-import io.qameta.allure.Step;
+-import org.openqa.selenium.By;
+-
+-import static com.codeborne.selenide.Selenide.*;
+-
+-/**
+-*  Головна сторінка сайту
+-*/
+-
+-public class MainPage {
+-
+-    @Step("Accept all cookies")
+-    public void Acceptallcookies() {
+-        $(By.id("uc-btn-accept-banner")).click();
+-    }
+-
+-    @Step("Click on Zeitung finden>Hochzeitszeitung")
+-    public void ZeitungfindenHochzeitszeitung() {
+-        actions()
+-                .moveToElement($x("//*[@id='mega-menu']/ul/li[1]")).pause(3000)
+-                .build().perform();
+-        $x("//*[@id='mega-menu']/ul/li[1]/ul/li[1]/a").shouldBe().click();
+-        baseTest.sec();
+-    }
+-    @Step("Click on Zeitung finden>Zeitung vom Tag der Geburt")
+-    public void ZeitungfindenZeitungvomTagderGeburt(){
+-            actions()
+-                    .moveToElement($x("//*[@id='mega-menu']/ul/li[1]")).pause(3000)
+-                    .build().perform();
+-            $x("//*[@id='mega-menu']/ul/li[1]/ul/li[2]/a").shouldBe().click();
+-        baseTest.sec();
+-    }
+-    @Step("Click on Zeitung finden>Zeitungsarchiv")
+-    public void ZeitungfindenZeitungsarchiv() {
+-        actions()
+-                .moveToElement($x("//*[@id='mega-menu']/ul/li[1]")).pause(3000)
+-                .build().perform();
+-        $x("//*[@id='mega-menu']/ul/li[1]/ul/li[3]/a").shouldBe().click();
+-        baseTest.sec();
+-    }
+-    @Step("Click on Zeitung finden>Jubiläumszeitung")
+-    public void ZeitungfindenJubilaumszeitung(){
+-        actions()
+-                .moveToElement($x("//*[@id='mega-menu']/ul/li[1]")).pause(3000)
+-                .build().perform();
+-        $x("//*[@id='mega-menu']/ul/li[1]/ul/li[4]/a").shouldBe().click();
+-        baseTest.sec();
+-    }
+-    @Step("Click on Zeitung finden>Geschenkzeitung")
+-    public void ZeitungfindenGeschenkzeitung(){
+-        actions()
+-                .moveToElement($x("//*[@id='mega-menu']/ul/li[1]")).pause(3000)
+-                .build().perform();
+-        $x("//*[@id='mega-menu']/ul/li[1]/ul/li[5]/a").shouldBe().click();
+-        baseTest.sec();
+-    }
+-
+-    BaseTest baseTest = new BaseTest();
+-}
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+deleted file mode 100644
+--- a/.idea/workspace.xml	(revision 503351f1c9e6d67702199a48aa5d8a5dd80d63e2)
++++ /dev/null	(revision 503351f1c9e6d67702199a48aa5d8a5dd80d63e2)
+@@ -1,346 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="AutoImportSettings">
+-    <option name="autoReloadType" value="SELECTIVE" />
+-  </component>
+-  <component name="ChangeListManager">
+-    <list default="true" id="e76374c5-2b80-44b8-899b-ae876d857023" name="Changes" comment="test massage">
+-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668181797547.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668181797547.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668182404240.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668182404240.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668182452675.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668182452675.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668182645288.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668182645288.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668415593032.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668415593032.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668416155423.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668416155423.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668416204834.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668416204834.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668416934544.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668416934544.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668417014211.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668417014211.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668417075915.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668417075915.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668417126205.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668417126205.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668417274399.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668417274399.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668417318180.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668417318180.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668417529104.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668417529104.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668418062190.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1668418062190.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669025778551.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669025778551.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669027464836.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669027464836.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669027771915.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669027771915.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669028152315.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669028152315.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669028504913.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669028504913.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669038257587.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669038257587.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669038760687.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669038760687.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669043771514.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669043771514.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669044047739.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669044047739.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669044230234.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669044230234.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669044357488.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669044357488.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669044508336.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669044508336.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669044655019.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669044655019.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669044808203.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669044808203.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669046785886.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669046785886.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669047276820.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669047276820.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669047478934.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669047478934.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669047569271.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669047569271.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669048229405.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669048229405.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669048511617.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669048511617.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669048867291.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669048867291.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669109326070.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669109326070.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669109777159.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669109777159.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669112273427.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669112273427.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669112790545.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669112790545.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669113054081.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669113054081.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669113156525.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669113156525.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669113276175.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669113276175.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669113394433.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669113394433.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669114012241.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669114012241.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669114199473.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669114199473.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669114452302.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669114452302.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669114592246.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669114592246.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669120587325.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669120587325.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669121128311.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669121128311.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669127115979.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669127115979.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669127459869.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669127459869.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669129064856.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669129064856.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669129410282.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669129410282.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669129569814.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669129569814.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669129747409.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669129747409.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669130140396.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669130140396.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669130213520.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669130213520.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669131508724.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669131508724.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669131597365.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669131597365.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669133149052.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669133149052.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669368575369.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669368575369.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669368724705.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669368724705.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669369135457.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669369135457.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669369407932.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669369407932.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669372816827.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669372816827.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669380415089.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669472797573.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669472797573.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669473001580.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669473001580.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669822073022.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669822073022.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669822829919.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669822829919.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669885924534.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669885924534.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669919559038.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669919559038.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669919692165.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669919692165.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669919790274.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669919790274.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669919845814.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1669919845814.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1670429763021.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1670673077899.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1670673077899.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1670943847998.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1670943847998.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1670943919763.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1670943919763.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1670944364325.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1670944364325.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1670944426642.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1670944426642.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1670944652561.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1670944652561.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1670944704497.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1670944704497.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1670944777206.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1670944777206.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1671443923757.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1671443923757.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1671521274081.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1671521274081.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1671540704025.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1671540704025.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1671540905985.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1671540905985.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1671542898269.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1671542898269.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1671548442373.0.html" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/build/reports/tests/1671548442373.0.png" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/java/Historia/pages/Categories.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/java/Historia/pages/FirstStepCheckout.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/java/Historia/pages/MainPage.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/java/Historia/scenarios/BaseTest.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/java/Historia/scenarios/FirstThree.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/test/java/Historia/scenarios/checkoutFirst.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/target/classes/org/example/Main.class" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/target/test-classes/Historia/pages/Categories.class" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/target/test-classes/Historia/pages/FirstStepCheckout.class" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/target/test-classes/Historia/pages/MainPage.class" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/target/test-classes/Historia/scenarios/BaseTest.class" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/target/test-classes/Historia/scenarios/FirstThree.class" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/target/test-classes/Historia/scenarios/checkoutFirst.class" afterDir="false" />
+-    </list>
+-    <option name="SHOW_DIALOG" value="false" />
+-    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+-    <option name="LAST_RESOLUTION" value="IGNORE" />
+-  </component>
+-  <component name="FileTemplateManagerImpl">
+-    <option name="RECENT_TEMPLATES">
+-      <list>
+-        <option value="Class" />
+-      </list>
+-    </option>
+-  </component>
+-  <component name="Git.Settings">
+-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+-  </component>
+-  <component name="HighlightingSettingsPerFile">
+-    <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
+-    <setting file="file://$PROJECT_DIR$/src/test/java/Historia/scenarios/BaseTest.java" root0="FORCE_HIGHLIGHTING" />
+-    <setting file="file://$PROJECT_DIR$/src/test/java/Historia/scenarios/checkoutFirst.java" root0="FORCE_HIGHLIGHTING" />
+-  </component>
+-  <component name="MarkdownSettingsMigration">
+-    <option name="stateVersion" value="1" />
+-  </component>
+-  <component name="ProjectId" id="2HDkY7ysONf7JhkKZCaIBNXR79A" />
+-  <component name="ProjectLevelVcsManager">
+-    <ConfirmationsSetting value="2" id="Add" />
+-  </component>
+-  <component name="ProjectViewState">
+-    <option name="hideEmptyMiddlePackages" value="true" />
+-    <option name="showLibraryContents" value="true" />
+-  </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "ASKED_ADD_EXTERNAL_FILES": "true",
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "last_opened_file_path": "C:/Users/PS/IdeaProjects/Historia",
+-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+-  }
+-}]]></component>
+-  <component name="RecentsManager">
+-    <key name="ExtractSuperBase.RECENT_KEYS">
+-      <recent name="" />
+-    </key>
+-  </component>
+-  <component name="RunManager" selected="JUnit.FirstThree.CataloguePages">
+-    <configuration name="FirstThree.CataloguePages" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+-      <module name="Historia" />
+-      <option name="PACKAGE_NAME" value="Historia.scenarios" />
+-      <option name="MAIN_CLASS_NAME" value="Historia.scenarios.FirstThree" />
+-      <option name="METHOD_NAME" value="CataloguePages" />
+-      <option name="TEST_OBJECT" value="method" />
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
+-    </configuration>
+-    <configuration name="checkoutFirst" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+-      <module name="Historia" />
+-      <option name="PACKAGE_NAME" value="Historia.scenarios" />
+-      <option name="MAIN_CLASS_NAME" value="Historia.scenarios.checkoutFirst" />
+-      <option name="TEST_OBJECT" value="class" />
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
+-    </configuration>
+-    <configuration name="checkoutFirst.checkDataFinder1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+-      <module name="Historia" />
+-      <option name="PACKAGE_NAME" value="Historia.scenarios" />
+-      <option name="MAIN_CLASS_NAME" value="Historia.scenarios.checkoutFirst" />
+-      <option name="METHOD_NAME" value="checkDataFinder1" />
+-      <option name="TEST_OBJECT" value="method" />
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
+-    </configuration>
+-    <configuration name="checkoutFirst.checkHref1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+-      <module name="Historia" />
+-      <option name="PACKAGE_NAME" value="Historia.scenarios" />
+-      <option name="MAIN_CLASS_NAME" value="Historia.scenarios.checkoutFirst" />
+-      <option name="METHOD_NAME" value="checkHref1" />
+-      <option name="TEST_OBJECT" value="method" />
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
+-    </configuration>
+-    <configuration name="checkoutFirst.checkHref2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+-      <module name="Historia" />
+-      <option name="PACKAGE_NAME" value="Historia.scenarios" />
+-      <option name="MAIN_CLASS_NAME" value="Historia.scenarios.checkoutFirst" />
+-      <option name="METHOD_NAME" value="checkHref2" />
+-      <option name="TEST_OBJECT" value="method" />
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
+-    </configuration>
+-    <recent_temporary>
+-      <list>
+-        <item itemvalue="JUnit.FirstThree.CataloguePages" />
+-        <item itemvalue="JUnit.checkoutFirst.checkDataFinder1" />
+-        <item itemvalue="JUnit.checkoutFirst.checkHref1" />
+-        <item itemvalue="JUnit.checkoutFirst.checkHref2" />
+-        <item itemvalue="JUnit.checkoutFirst" />
+-      </list>
+-    </recent_temporary>
+-  </component>
+-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+-  <component name="TaskManager">
+-    <task active="true" id="Default" summary="Default task">
+-      <changelist id="e76374c5-2b80-44b8-899b-ae876d857023" name="Changes" comment="" />
+-      <created>1667827093249</created>
+-      <option name="number" value="Default" />
+-      <option name="presentableId" value="Default" />
+-      <updated>1667827093249</updated>
+-    </task>
+-    <servers />
+-  </component>
+-  <component name="Vcs.Log.Tabs.Properties">
+-    <option name="TAB_STATES">
+-      <map>
+-        <entry key="MAIN">
+-          <value>
+-            <State />
+-          </value>
+-        </entry>
+-      </map>
+-    </option>
+-  </component>
+-  <component name="VcsManagerConfiguration">
+-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+-    <MESSAGE value="test massage" />
+-    <option name="LAST_COMMIT_MESSAGE" value="test massage" />
+-  </component>
+-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+-    <SUITE FILE_PATH="coverage/Historia$checkoutFirst_checkHref.ic" NAME="checkoutFirst.checkHref Coverage Results" MODIFIED="1668419320318" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: src/test/java/Historia/scenarios/BaseTest.java
+===================================================================
+diff --git a/src/test/java/Historia/scenarios/BaseTest.java b/src/test/java/Historia/scenarios/BaseTest.java
+deleted file mode 100644
+--- a/src/test/java/Historia/scenarios/BaseTest.java	(revision 503351f1c9e6d67702199a48aa5d8a5dd80d63e2)
++++ /dev/null	(revision 503351f1c9e6d67702199a48aa5d8a5dd80d63e2)
+@@ -1,47 +0,0 @@
+-package Historia.scenarios;
+-
+-import com.codeborne.selenide.Configuration;
+-import com.codeborne.selenide.Selenide;
+-import io.github.bonigarcia.wdm.WebDriverManager;
+-import org.junit.After;
+-import org.junit.Before;
+-
+-import static com.codeborne.selenide.Selenide.*;
+-
+-public class BaseTest {
+-    public void setUp(){
+-        WebDriverManager.chromedriver().setup();
+-        Configuration.browser = "chrome";
+-        Configuration.driverManagerEnabled = true;
+-        Configuration.browserSize = "1720x900";
+-        Configuration.headless = false;
+-            }
+-            public void gotoMainPage(){
+-                open("https://www.historia.net/de-de/");
+-            }
+-    public void sec(){
+-        sleep(2000);
+-    }
+-//    }
+-    public void secB(){sleep(4000);
+-    }
+-    public void secV(){sleep(9000);
+-    }
+-    public void EnterAllReqFields() {
+-        sec();
+-        $x("//*[@id='co-shipping-form']//*[@name='prefix']").setValue("autotest");
+-        $x("//*[@id='co-shipping-form']//*[@name='firstname']").setValue("autotest");
+-        $x("//*[@id='co-shipping-form']//*[@name='lastname']").setValue("autotest");
+-        $x("//*[@id='co-shipping-form']//*[@name='street[0]']").setValue("autotest");
+-        $x("//*[@id='co-shipping-form']//*[@name='postcode']").setValue("23456");
+-        $x("//*[@id='co-shipping-form']//*[@name='city']").setValue("autotest");}
+-
+-        @Before
+-    public void init(){
+-        setUp();
+-            }
+-            @After
+-    public void tearDown(){
+-                Selenide.closeWebDriver();
+-            }
+-   }
+Index: historia-autotests/build/reports/tests/1671789544979.0.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/historia-autotests/build/reports/tests/1671789544979.0.html b/historia-autotests/build/reports/tests/1671789544979.0.html
+new file mode 100644
+--- /dev/null	(date 1671789544989)
++++ b/historia-autotests/build/reports/tests/1671789544979.0.html	(date 1671789544989)
+@@ -0,0 +1,9 @@
++org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
++from unknown error: web view not found
++  (Session info: chrome=108.0.5359.125)
++Build info: version: '4.7.1', revision: 'c6795baf1a3'
++System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
++Driver info: org.openqa.selenium.chrome.ChromeDriver
++Command: [6337b271d55ab760ea24c56a3530f7d0, getPageSource {}]
++Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\PS\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:56026}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56026/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
++Session ID: 6337b271d55ab760ea24c56a3530f7d0
+\ No newline at end of file
+Index: .idea/encodings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"Encoding\">\r\n    <file url=\"file://$PROJECT_DIR$/src/main/java\" charset=\"UTF-8\" />\r\n    <file url=\"file://$PROJECT_DIR$/src/main/resources\" charset=\"UTF-8\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/encodings.xml b/.idea/encodings.xml
+--- a/.idea/encodings.xml	(revision 503351f1c9e6d67702199a48aa5d8a5dd80d63e2)
++++ b/.idea/encodings.xml	(date 1671627290700)
+@@ -1,6 +1,8 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="Encoding">
++    <file url="file://$PROJECT_DIR$/historia-autotests/src/main/java" charset="UTF-8" />
++    <file url="file://$PROJECT_DIR$/historia-autotests/src/main/resources" charset="UTF-8" />
+     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+   </component>
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1671627290575)
++++ b/.idea/modules.xml	(date 1671627290575)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/historia-autotests/.idea/Historiaautotests.iml" filepath="$PROJECT_DIR$/historia-autotests/.idea/Historiaautotests.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"VcsDirectoryMappings\">\r\n    <mapping directory=\"\" vcs=\"Git\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+--- a/.idea/vcs.xml	(revision 503351f1c9e6d67702199a48aa5d8a5dd80d63e2)
++++ b/.idea/vcs.xml	(date 1671627290618)
+@@ -2,5 +2,6 @@
+ <project version="4">
+   <component name="VcsDirectoryMappings">
+     <mapping directory="" vcs="Git" />
++    <mapping directory="$PROJECT_DIR$/historia-autotests" vcs="Git" />
+   </component>
+ </project>
+\ No newline at end of file

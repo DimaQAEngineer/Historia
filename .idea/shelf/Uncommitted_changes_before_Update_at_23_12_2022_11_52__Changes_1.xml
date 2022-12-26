@@ -1,0 +1,9 @@
+<changelist name="Uncommitted_changes_before_Update_at_23_12_2022_11_52_[Changes]1" date="1671789157077" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_12_2022_11_52_[Changes]1/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 23.12.2022 11:52 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="historia-autotests/target/test-classes/Historia/scenarios/checkoutFirst.class" />
+    <option name="AFTER_PATH" value="historia-autotests/target/test-classes/Historia/scenarios/checkoutFirst.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_23_12_2022_11_52_[Changes]1/checkoutFirst.class" />
+  </binary>
+</changelist>
